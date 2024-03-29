@@ -16,7 +16,7 @@ class CreateExchangeRateListsTable extends Migration
         Schema::create('exchange_rate_lists', function (Blueprint $table) {
             $table->id();
             $table->string('symbol');
-            $table->string('currencyName', 200)->index();
+            $table->string('currencyName', 200);
             $table->float('amount');
             $table->string('shrtCode');
         });
